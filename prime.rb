@@ -6,8 +6,6 @@
     num_array.find do |div|
       if num%div == 0
         return false
-      elsif num < 2
-        return false
       else
         return true
       end
