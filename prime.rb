@@ -1,9 +1,11 @@
 def prime?(num)
-  num_array = (1..100).to_a
+  num_array = (2..100).to_a
   num_array.find do |div|
     if num%div == 0
       return false
     elsif num < 0
+      return false
+    elsif num == -1
       return false
     elsif num%div != 0
       return true
