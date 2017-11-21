@@ -3,9 +3,7 @@ def prime?(num)
   num_array.find do |div|
     if num%div == 0
       return false
-    elsif num <= 0
-      return false
-    elsif num == 1
+    elsif num <= 1
       return false
     else
       return true
