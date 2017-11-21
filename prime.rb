@@ -1,5 +1,5 @@
 # Add  code here!
-def prime(num)
+def prime?(num)
   num_array = (1..100).to_a
   num_array.each do |div|
     if num%div == 0
