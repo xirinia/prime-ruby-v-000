@@ -1,13 +1,13 @@
 def prime?(num)
   if num <= 1
-    false
+    return false
   else
     num_array = (2..(num-1)).to_a
     num_array.find do |div|
       if num%div == 0
-        false
+        return false
       else
-        true
+        return true
       end
     end
   end
