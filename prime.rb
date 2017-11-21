@@ -1,11 +1,10 @@
-# Add  code here!
 def prime?(num)
-  num_array = (1..100).to_a
-  num_array.each do |div|
+  num_array = (2..100).to_a
+  num_array.find do |div|
     if num%div == 0
-      false
+      return false
     else
-      true
+      return true
     end
   end
 end
