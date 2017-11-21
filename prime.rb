@@ -5,9 +5,9 @@
     num_array = (2..(num-1)).to_a
     num_array.find do |div|
       if num%div == 0
-        return false
+        false
       else
-        return true
+        true
       end
     end
   end
