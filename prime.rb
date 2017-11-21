@@ -1,5 +1,5 @@
 def prime?(num)
-  num_array = (1..num).to_a
+  num_array = (2..(num-1)).to_a
   num_array.find do |div|
     if num%div == 0
       return false
@@ -7,7 +7,7 @@ def prime?(num)
       return false
     elsif num == 1
       return false
-    elsif num%div != 0
+    else
       return true
     end
   end
